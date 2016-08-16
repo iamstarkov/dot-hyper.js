@@ -1,0 +1,19 @@
+{
+  "name": "dot-hyperterm.js",
+  "version": "1.0.0",
+  "description": "hyperterm config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamstarkov/dot-hyperterm.js.git"
+  },
+  "author": "Vladimir Starkov <iamstarkov@gmail.com> (https://iamstarkov.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamstarkov/dot-hyperterm.js/issues"
+  },
+  "homepage": "https://github.com/iamstarkov/dot-hyperterm.js#readme"
+}
