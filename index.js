@@ -30,7 +30,10 @@ module.exports = {
 
     // custom padding (css format, i.e.: `top right bottom left`)
     padding: '3px 4px',
-
+    
+    // A path to a custom shell to run when hyperterm starts a new session
+    shell: '/bin/zsh',
+    
     // some color overrides. see http://bit.ly/29k1iU2 for
     // the full list
     colors: []
