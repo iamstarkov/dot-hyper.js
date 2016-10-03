@@ -30,10 +30,7 @@ module.exports = {
 
     // custom padding (css format, i.e.: `top right bottom left`)
     padding: '3px 4px',
-    
-    // A path to a custom shell to run when hyperterm starts a new session
-    shell: '/bin/zsh',
-    
+
     // some color overrides. see http://bit.ly/29k1iU2 for
     // the full list
     colors: []
@@ -50,11 +47,5 @@ module.exports = {
     'hypercwd',
     'hyperterm-subpixel-antialiased',
     'hyperlinks',
-  ],
-
-  // in development, you can create a directory under
-  // `~/.hyperterm_plugins/local/` and include it here
-  // to load it and avoid it being `npm install`ed
-  localPlugins: [
   ]
 };
