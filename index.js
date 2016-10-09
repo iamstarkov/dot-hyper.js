@@ -9,8 +9,7 @@ module.exports = {
     // terminal cursor background color (hex)
     cursorColor: '#F81CE5',
 
-    // The shape of the caret in the terminal.
-    // Available options are: 'BEAM', 'UNDERLINE', 'BLOCK'
+    // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BEAM',
 
     // color of the text
