@@ -32,7 +32,10 @@ module.exports = {
 
     // some color overrides. see http://bit.ly/29k1iU2 for
     // the full list
-    colors: []
+    colors: [],
+
+    // if true, selected text will automatically be copied to the clipboard
+    copyOnSelect: true,
   },
 
   // a list of plugins to fetch and install from npm
