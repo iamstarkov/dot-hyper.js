@@ -1,15 +1,17 @@
 module.exports = {
   config: {
     // default font size in pixels for all tabs
-    fontSize: 15,
+    fontSize: 14,
 
     // font family with optional fallbacks
     fontFamily: 'Fira Code',
+    uiFontFamily: 'Fira Code',
 
     // terminal cursor background color (hex)
     cursorColor: '#F81CE5',
 
-    // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
+    // The shape of the caret in the terminal.
+    // Available options are: 'BEAM', 'UNDERLINE', 'BLOCK'
     cursorShape: 'BEAM',
 
     // color of the text
@@ -25,7 +27,12 @@ module.exports = {
     css: '',
 
     // custom css to embed in the terminal window
-    termCSS: '',
+    termCSS: `
+      x-screen x-row {
+        font-variant-ligatures: initial;
+        // background-color: black;
+      }
+    `,
 
     // custom padding (css format, i.e.: `top right bottom left`)
     padding: '3px 4px',
@@ -34,8 +41,13 @@ module.exports = {
     // the full list
     colors: [],
 
-    // if true, selected text will automatically be copied to the clipboard
     copyOnSelect: true,
+
+    paneNavigation: {
+      debug: true,
+      showIndicators: false,
+      focusOnMouseHover: true,
+    },
   },
 
   // a list of plugins to fetch and install from npm
@@ -47,7 +59,16 @@ module.exports = {
   plugins: [
     'hyperterm-one-light',
     'hypercwd',
-    'hyperterm-subpixel-antialiased',
+    'hyper-font-smoothing',
+    'hyper-simple-highlight-active-session',
     'hyperlinks',
+    'hyper-pane',
+  ],
+
+  // in development, you can create a directory under
+  // `~/.hyperterm_plugins/local/` and include it here
+  // to load it and avoid it being `npm install`ed
+  localPlugins: [
+    // '/Users/vlasta/projects/hyper-keymap'
   ]
 };
