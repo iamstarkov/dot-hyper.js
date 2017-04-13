@@ -1,5 +1,7 @@
 # dot-hyperterm.js
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/iamstarkov/dot-hyper.js.svg)](https://greenkeeper.io/)
+
 [my config](./index.js) for [HyperTerm][HT]
 
 [HT]: https://hyperterm.org/
